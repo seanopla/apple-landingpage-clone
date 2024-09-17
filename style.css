@@ -1,0 +1,160 @@
+/* @font-face {
+  font-family: "SF Pro Text";
+  src: url(/assets/fonts/SFProText-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF Pro Text";
+  src: url(/assets/fonts/SFProText-Bold.ttf) format("truetype");
+  font-weight: bold;
+  font-style: normal;
+} */
+
+/* general style */
+:root {
+  --primary-color: rgb(0, 113, 227);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text",
+    "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 996px;
+  max-height: 44px;
+  margin: 0 auto;
+}
+
+.btn {
+  font-size: 17px;
+  line-height: 1;
+  font-weight: 400;
+  border: 1px solid var(--primary-color);
+  padding: 11px 21px;
+  border-radius: 980px;
+  transition: all 0.5 ease-in-out;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  opacity: 0.8;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #2997ff;
+}
+
+.btn-secondary:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+/* header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.navbar {
+  padding: 0px 16px;
+  font-size: 12px;
+  line-height: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-apple {
+  width: 15px;
+  height: 44px;
+}
+
+.icon-search {
+  width: 15px;
+  height: 44px;
+}
+
+.navbar a {
+  font-size: 12px;
+  color: #000;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+/* section iphone 15 */
+.iphone {
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 580px;
+}
+
+#iphone-15-black {
+  margin-top: 44px;
+  background-image: url("./assets/img/hero_iphone.jpg");
+}
+
+#iphone-15-white {
+  margin-top: 20px;
+  background-image: url("./assets/img/hero_iphone_white.jpg");
+}
+
+#iphone-15-white p {
+  color: #000;
+}
+#iphone-15-white h2 {
+  color: #000;
+}
+
+.iphone-content {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.iphone-content h2 {
+  font-size: 56px;
+  line-height: 1;
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display",
+    "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.iphone-content p {
+  font-size: 28px;
+  line-height: 1;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display",
+    "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  margin-top: 6px;
+  margin-bottom: 19px;
+}
+
+.cta-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta-button .btn-secondary {
+  margin-left: 13px;
+}
