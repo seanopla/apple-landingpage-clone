@@ -15,14 +15,17 @@
 /* general style */
 :root {
   --primary-color: rgb(0, 113, 227);
+  --primary-font: -apple-system, BlinkMacSystemFont, "SF Pro Text",
+    "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --secondary-font: -apple-system, BlinkMacSystemFont, "SF Pro Display",
+    "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text",
-    "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: var(--primary-font);
   font-weight: 400;
 }
 
@@ -177,4 +180,104 @@
 
 .cta-button .btn-secondary {
   margin-left: 13px;
+}
+
+/* section grid product */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.grid-items-product {
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 580px;
+  display: flex;
+  flex-direction: column;
+  color: #000;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.watch-nine {
+  background-image: url("./assets/img/apple_watch.jpg");
+}
+
+.watch-ultra {
+  background-image: url("./assets/img/apple_watch_white.jpg");
+}
+
+.ipad {
+  background-image: url("./assets/img/ipad.jpg");
+}
+
+.ipad-pro {
+  background-image: url("./assets/img/ipad_black.jpg");
+}
+.macbook {
+  background-image: url("./assets/img/macbook_white.jpg");
+}
+.airpods {
+  background-image: url("./assets/img/airpods.jpg");
+}
+
+.watch-nine h4 {
+  color: #fff;
+}
+
+.watch-ultra h4 {
+  color: #000;
+}
+
+.airpods {
+  color: white;
+}
+
+.grid-items-product img {
+  margin-top: 59px;
+}
+
+.grid-items-product h4 {
+  font-size: 21px;
+  margin-bottom: 17px;
+}
+
+.logo-product {
+  margin-bottom: 10px;
+  height: 53px;
+  width: auto;
+}
+
+.grid-items-product button {
+  margin-top: 17px;
+  font-size: 14px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.product-item h2 {
+  margin-top: 53px;
+  font-size: 40px;
+  line-height: 1.1;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.product-item p {
+  font-size: 21px;
+  line-height: 1.2;
+  letter-spacing: 0.011em;
+  font-family: var(--secondary-font);
+}
+
+.ipad-pro h2 {
+  color: #fff;
+}
+
+.ipad-pro p {
+  color: #fff;
 }
