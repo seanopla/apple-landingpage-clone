@@ -19,6 +19,9 @@
     "Helvetica Neue", Helvetica, Arial, sans-serif;
   --secondary-font: -apple-system, BlinkMacSystemFont, "SF Pro Display",
     "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --footer-font: -apple-system, BlinkMacSystemFont, "SF Pro Text",
+    "Myriad Set Pro", "SF Pro Icons", "Apple Legacy Chevron", "Helvetica Neue",
+    Helvetica, Arial, sans-serif;
 }
 
 * {
@@ -401,4 +404,62 @@
 .carousel-item.enter-left {
   transform: translateX(0%);
   visibility: visible;
+}
+
+/* Footer */
+footer {
+  background-color: rgb(245, 245, 247);
+  font-size: 12px;
+  padding-top: 12px;
+  font-family: var(--footer-font);
+  padding-bottom: 12px;
+}
+
+.subscribe {
+  color: rgba(0, 0, 0, 0.56);
+}
+
+.line {
+  border-color: rgba(0, 0, 0, 0.16);
+  margin: 14px 0;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer li {
+  font-family: var(--footer-font);
+  color: rgba(0, 0, 0, 0.72);
+}
+
+.list-footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.list-footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 9.6px;
+  margin-bottom: 20px;
+}
+
+.footer-title {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.88);
+}
+
+.retailer {
+  color: rgba(0, 0, 0, 0.56);
+  font-size: 12px;
+}
+.list-copyright {
+  display: flex;
+  justify-content: space-between;
+  color: rgba(0, 0, 0, 0.56);
+  padding-bottom: 11px;
+}
+.list-accordion {
+  display: none;
 }
