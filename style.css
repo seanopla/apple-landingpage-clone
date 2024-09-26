@@ -65,6 +65,17 @@
   color: #fff;
 }
 
+.btn-white {
+  background-color: #fff;
+  border-color: #fff;
+  color: #000;
+}
+
+.btn-white:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
 /* header */
 .header {
   position: fixed;
@@ -280,4 +291,114 @@
 
 .ipad-pro p {
   color: #fff;
+}
+
+/* Carousel */
+#apple-tv {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+.carousel {
+  position: relative;
+  max-width: 1265px;
+  margin: 0 auto;
+  height: 668px;
+  margin-bottom: 12px;
+}
+
+.carousel-item {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out, visibility 0.5s ease-in-out;
+  /* visibility: hidden; */
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-left: 55px;
+  padding-bottom: 50px;
+}
+
+.carousel-content strong {
+  font-weight: 700;
+}
+
+.carousel-content p {
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.1;
+}
+
+.carousel-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.carousel-control span {
+  background-color: rgba(0, 0, 0, 0.42);
+  height: 8px;
+  width: 8px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.carousel-control .active {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-item.active {
+  visibility: visible;
+  z-index: 22;
+  position: relative;
+  transform: translateX(0%);
+}
+
+.carousel-item.previous {
+  visibility: visible;
+  z-index: 11;
+  cursor: pointer;
+  transform: translateX(-100%);
+}
+
+.carousel-item.next {
+  visibility: visible;
+  z-index: 10;
+  cursor: pointer;
+  transform: translateX(100%);
+}
+
+.carousel-item.move-left {
+  transform: translateX(-100%);
+  visibility: visible;
+}
+
+.carousel-item.move-right {
+  transform: translateX(100%);
+  visibility: visible;
+}
+.carousel-item.enter-right {
+  transform: translateX(0%);
+  visibility: visible;
+}
+.carousel-item.enter-left {
+  transform: translateX(0%);
+  visibility: visible;
 }
